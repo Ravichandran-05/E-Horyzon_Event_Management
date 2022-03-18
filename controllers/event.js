@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 const stripe = require("stripe")(
-    "sk_test_51JghK2SBCBqXFU6IPaXdTq7wwu5S0gUfqVbTimCBck9Y9IxmizTkwbTVKP2E9m9BRYEkYjGN2QyTbXi7ACQ8ue10009YFJ5FyE"
+    "stripe_key"
 );
 const PDFDocument = require("pdfkit");
 const Participant = require("../models/participant");

@@ -13,7 +13,7 @@ var xlstojson = require("xls-to-json-lc");
 var xlsxtojson = require("xlsx-to-json-lc");
 const errorController = require("./controllers/error");
 const User = require("./models/user");
-const MONGODB_URI ="mongodb";
+const MONGODB_URI =process.env.MONGODB_URI;
 const app = express();
 const store = new MongoDBStore({
     uri: MONGODB_URI,
